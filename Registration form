@@ -1,0 +1,111 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="forms.css">
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+    
+  <center> 
+    <img src="1.jpg"  width="140" height="100" >
+    <h1> Indian Institute Of Technology</h1>
+  <h2>Registration for Degree Program</h2> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Lastname: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label>   DOB(Date of Birth): </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Course :  
+</label>   
+  
+<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BE</option>  
+<option value="BBA">BS & MS</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">M.Sc</option>  
+<option value="MCA">M.Tech</option>  
+<option value="M.Tech">Phd </option>  
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+ Local Gaurdian :  
+ <input type="text" name="Enter name" placeholder="Enter name"  value=" " size="20"/>   
+ <label>   
+  Phone :  
+  </label>  
+  <input type="text" name="country code" placeholder="phone no."  size="10"/>   
+ <p><b>Education Details</b></p> 
+ <b>10th</b>
+ <label for="psw"><b>Board</b></label>  
+ <input type="Name" placeholder="" name="psw" required>   
+ <label for="psw"><b>Year of Passing</b></label>  
+ <input type="no" placeholder="year" name="psw" required>  
+ <label for="psw"><b>Marks</b></label>  
+ <input type="no" placeholder="Enter in %" name="psw" required> 
+ <p>
+ <label for="psw"><b>12th  Board</b></label>  
+ <input type="Name" placeholder="" name="psw" required>   
+ <label for="psw"><b>Year of Passing</b></label>  
+ <input type="no" placeholder="year" name="psw" required>  
+ <label for="psw"><b>Marks</b></label>  
+ <input type="no" placeholder="Enter in %" name="psw" required> 
+</p>
+<p>
+  <label for="psw"><b>CET Rank &NonBreakingSpace;</b></label>  
+  <input type="Name" placeholder="" name="psw" required>    
+  <label for="psw"><b>AIR</b></label>  
+ <input type="no" placeholder="" name="psw" required>
+  <label for="psw"><b>Marks</b></label>  
+  <input type="no" placeholder="ex:170/180" name="psw" required> 
+ 
+  </p>
+
+    <button type="submit" onclick="openForm()" class="registerbtn">Register</button> 
+    
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+       <h1> &nbsp; Submitted sucessefully!! &nbsp;</h1>
+    
+        <center>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </center>
+      </form>
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>  
+  
+</form>  
+</body>  
+</html>
